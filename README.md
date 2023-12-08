@@ -42,8 +42,14 @@ Configure execution rights
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+Set soft link
+
+```shell
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+
 Check if it's installed successfully
 
 ```shell
-docker-compose -v
+docker compose version
 ```
